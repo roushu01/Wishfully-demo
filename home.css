@@ -13,4 +13,113 @@
     width: 100%;
     border-radius: 9px;
 }
+.recent{
+    margin-left: 5%;
+    margin-top:4%;
+    width:90%;
+    height:500px;
+    display: flex;
+    justify-content: space-between; /* Distribute children evenly */
+    align-items: center;
+    padding:5px;
+}
+.recentl1 ,.recentl2, .recentl3{
+    height:98%;
+    width:30%;
+    background-color: aliceblue;
+
+}
+.recentl1-left{
+    /* position: absolute; */
+    width:42%;
+    height:90%;
+    margin-right:10px;
+    
+}
+.recentl1-right{
+   
+    margin-top: -110%;
+    margin-left: 50%;
+    width:42%;
+    height:90%;
+}
+.recentl1-Pro1{
+    margin:5px;
+    height: 40%;
+    width: 100%;
+    background: url('./img/colour.jpg') no-repeat center center; /* Set background image */
+    background-size: cover; /* Make sure the image covers the entire box */
+    background-position: center;
+}
+.recentl1-Pro2{
+    margin:5px;
+    height: 40%;
+    width: 100%;
+    background: url('./img/scrunchies.jpg') no-repeat center center; /* Set background image */
+    background-size: cover; /* Make sure the image covers the entire box */
+    background-position: center;
+}
+.recentl1-Pro3{
+    margin:5px;
+    height: 44%;
+    width: 100%;
+    background: url('./img/highlighter.jpg') no-repeat center center; /* Set background image */
+    background-size: cover; /* Make sure the image covers the entire box */
+    background-position: center;
+}
+.recentl1-Pro4{
+    margin:5px;
+    height: 44%;
+    width: 100%;
+    background: url('./img/asthetic.jpg') no-repeat center center; /* Set background image */
+    background-size: cover; /* Make sure the image covers the entire box */
+    background-position: center;
+}
+.feedback{
+    margin-left: 5%;
+    margin-top:4%;
+    width:90%;
+    height:500px;
+    display: flex;
+    justify-content: space-between; /* Distribute children evenly */
+    align-items: center;
+    padding:5px;
+
+}
+.feedback-box1 ,.feedback-box2, .feedback-box3{
+    height:98%;
+    width:30%;
+    background-color: aliceblue;
+
+}
+.feedback-box1 {
+    background-color: #007bff;
+    animation: slide 6s infinite;
+ }
+
+ .feedback-box2 {
+    background-color: #28a745;
+    animation: slide 6s infinite 2s;
+ }
+
+ .feedback-box3 {
+    background-color: #ffc107;
+    animation: slide 6s infinite 4s;
+ }
+
+ @keyframes slide-horizontal {
+    0%, 25% {
+       transform: translateX(100%); /* Start from the right */
+    }
+    26%, 50% {
+       transform: translateX(0); /* Move to the center */
+    }
+    51%, 75% {
+       transform: translateX(-100%); /* Move to the left */
+    }
+    76%, 100% {
+       transform: translateX(0); /* Move back to the center */
+    }
+ }
+
 

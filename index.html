@@ -5,87 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="exmp.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+
  </head>
  <body>
 
     <header>
-       <div class="logo"><img src='./Wishfully (1).png'></div>
+       <div class="logo"><img src='./img/Wishfully (1).png'></div>
        <nav class="navigation">
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Contact</a>
-        <a href="">Services</a>
+        <a href="#" class="dropdown-link">Services</a>
+                <div class="dropdown-menu">
+                    <a href="#">Scrunchies</a>
+                    <a href="#">Pen</a>
+                    <a href="#">Clips</a>
+                    <a href="#">Dairy</a>
+                </div>
         <button class="popup-button">Login</button>
        </nav>
     </header>
     <div class="">
       <div class="head-box">
-         <img src="./head.jpg">
+         <img src="./img/head.jpg">
       </div>
   </div>
-      <div class="wrapper">
+  <!-- salefor everyone -->
+      <div class="recent">
+         <div class="recentl1">
+            <p>SALE FOR EVERONE</p>
+            <div class="recentl1-left">
+            <div class="recentl1-Pro1"> </div>
+            <p>Flat 60% off</p>
+            <div class="recentl1-Pro2 "></div>
+            <p>Flat 60% off</p>
+           </div>
+           <div class="recentl1-right">
+            <div class="recentl1-Pro3"> </div>
+            <p>Flat 60% off</p>
+            <div class="recentl1-Pro4"></div>
+            <p>Flat 60% off</p>
+           </div>
 
- 
-         <div class="form-box login">
-            <h2>Login</h2>
-            <form action="index.html">
-               <div class="input-box">
-                  <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                  <input type="email" name="" autocomplete="email" id="emaill" placeholder="example@gmail.com">
-                 <label>Email</label>
-               </div>
-               <div class="input-box">
-                  <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                  <input type="password" name="" id="pass" placeholder="****">
-                  <label>Password</label>
-               </div>
-               <div class="remember-forget">
-                  <label><input type="checkbox" id="rem">Remember me </label>
-                  <p><a href="#">  Forgot Password?</a></p>
-               </div>
-               <button type="submit"class="btn">Login</button>
-               
-               <button type="submit"class="btn">Login with Google</button>
-               
-               <div class="register">
-                  <p>Create New Account! <a href="#" class="signup-link">Register</a></p>
-               </div>
-            </form>
+         </div>
+          <!-- bestseller -->
+         <div class="recentl2">
+            <div class="recentl1-Pro1"></div>
+            <p>Flat 60% off</p>
          </div>
 
-
-
-         <div class="form-box signup">
-            <h2>Signup</h2>
-            <form action="index.html">
-               <div class="input-box">
-                  <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                   <input type="text" name="" autocomplete="additional-name" id="username" placeholder="xyz"><label>Username</label>
-               </div>
-               <div class="input-box">
-                  <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                  <input type="email" name="" autocomplete="email" id="email" placeholder="example@gmail.com">
-                  <label>Email</label>
-               </div>
-               <div class="input-box">
-                  <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                <input type="password" name="" id="passs" placeholder="****">
-                  <label>Password</label>
-               </div>
-               <div class="remember-forget">
-                  <label><input type="checkbox" id="agree">I agree to the terms&conditions</label>
-               </div>
-               <button type="submit"class="btn">Signup</button>
-               
-               <div class="register">
-                  <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-               </div>
-            </form>
+         <div class="recentl3">
+            <div class="recentl1-Pro1"> </div>
+            <p>Flat 60% off</p>
          </div>
       </div>
+     <!-- user feedback -->
+     <section class="product"> 
+      <h2 class="product-category">best selling</h2>
+      <button class="pre-btn"><img src="./img/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="./img/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card2.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card3.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card4.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card5.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card6.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card7.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card8.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card9.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="images/card10.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to wishlist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-description">a short line about the cloth..</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+              </div>
+          </div>
+      </div>
+      <section>
 
-      <script src="index.js"></script>
+
+
+
+      <!-- footer -->
+       <footer class="footer">
+
+       </footer>
+      <script src="./index.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
