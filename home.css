@@ -23,6 +23,9 @@
     align-items: center;
     padding:5px;
 }
+.recent p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .recentl1 ,.recentl2, .recentl3{
     height:98%;
     width:30%;
@@ -32,13 +35,13 @@
 .recentl1-left{
     /* position: absolute; */
     width:42%;
-    height:90%;
-    margin-right:10px;
+    height:92%;
+    margin-right:12px;
     
 }
 .recentl1-right{
    
-    margin-top: -110%;
+    margin-top: -125%;
     margin-left: 50%;
     width:42%;
     height:90%;
