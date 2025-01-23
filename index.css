@@ -60,10 +60,15 @@ transform: scaleX(1);
 text-decoration: underline;
 }
 
+.no-hover{
+    
+    cursor: default;
+}
+
 .popup-button{
     width:150px;
     height: 50px;
-   
+    text-align: center;
     border: 2px solid #4c6e2f;
     outline: auto;
     border-radius: 6px;
@@ -73,13 +78,10 @@ text-decoration: underline;
     font-weight: 500;
     margin-left: 40px;
     transition:1s;
+  
 }
 
-.pop-button:hover{
-    background:#4c6e2f;
-    color: #4c6e2f;
-
-}
+ 
 /* Dropdown Styles */
 .dropdown {
     position: relative;
@@ -115,7 +117,7 @@ text-decoration: underline;
     display: block;
 }
 .footer{
-    background: url("./img/d60.png");
+    background: url("./img/d60.jpg");
     height: 400px;
     width:100%;
     margin-top: 20px;

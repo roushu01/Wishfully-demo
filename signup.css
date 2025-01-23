@@ -10,7 +10,7 @@ padding:0;
    font-family:'Sriracha';
 }
 body{
-    background: url('./img/download.jpg');
+    background: url('./img/d60.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -94,7 +94,7 @@ text-decoration: underline;
     position: relative;
     width: 400px;
     height: 440px;
-    background: rgba(255, 255, 255, 0.1); /* Add a semi-transparent background color */
+    background: whitesmoke; /* Add a semi-transparent background color */
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -239,7 +239,7 @@ padding: 40px;
 }
 .btn a{
     font-size:.9em;
-    color: antiquewhite;
+    color: #4c6e2f;
 }
 .register {
      
