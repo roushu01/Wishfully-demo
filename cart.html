@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />   
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="exmp.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+   <!-- slider -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+        .product-container {
+       
+            padding: 20px;
+            display: flex; /* Enables Flexbox */
+           
+            width: 100%; /* Adjust as needed */
+           
+        }
+        .pro-img{
+            margin-right:20px;
+        }
+        .detail{
+            color:grey;
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+        .buy-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            margin-left:10px;
+        }
+        .buy-btn1 {
+            background-color: #dcdbdb;
+            color: black;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src='./img/Wishfully (1).png'></div>
+        <div class="dropdown">
+        <nav class="navigation">
+         <a href="index.html">Home</a>
+         <a href="">About</a>
+         <a href="">Contact</a>
+         
+         <a href="#" class="dropdown-link">Services</a>
+                 <div class="dropdown-menu">
+                     <a href="scrunchie.html">Scrunchies</a>
+                     <a href="#">Pen</a>
+                     <a href="#">Clips</a>
+                     <a href="#">Diary</a>
+                 </div></div>
+                 <a class="no-hover" href="signup.html"><button class="popup-button">Login</button></a>
+        </nav>
+         
+     </header>
+
+    <div class="product-container">
+        <div class="pro-img">
+        <img id="product-image" src="" alt="Product Image"></div>
+        <div class="pr-detail">
+        <p id="product-name" style="font-size:1.5rem;"></p>
+        
+        <p><strike id="old-price" style="color:red;"></strike> <span id="new-price"></span> - <span id="discount"></span></p>
+        <h2>Product Details</h1>
+        <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam earum eum aliquid commodi consequuntur eius quisquam quia nisi vel optio totam sit impedit, esse cum ut, molestias tenetur nihil? Aspernatur eveniet itaque et dolor adipisci corporis ipsa error, libero distinctio totam sapiente unde repudiandae iste, modi minus obcaecati fugiat similique quod expedita amet veritatis voluptas impedit, aut excepturi! Dolorum, facere. Ratione quos temporibus ducimus, dolor atque voluptatibus dolorum ex molestias modi quaerat impedit consequuntur provident vitae nobis architecto quibusdam adipisci!</p>
+        <button class="buy-btn1" onclick="purchase()">Add to cart</button>
+        <button class="buy-btn" onclick="purchase()">Buy Now</button>
+        
+       </div>
+    </div>
+   
+    <!-- recently-viewed -->
+    <!--product-->
+    <h1 style="margin-left:15px;">Recently Viewed</h1>
+    <div class="product">
+        
+        <div class="product-1">
+         <img src="./img/scr1.webp" style="height:350px;width:350px;">
+         <p class="offer"><strike>$50</strike>&nbsp;<span>$30</span> &nbsp;&nbsp; 60% off</p>
+         <div class="product-rating">
+         <span class="star" data-value="1" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="2" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="3" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="4" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="5"style="color:  #ccc;">&#9733;</span>
+        </div>
+        </div>
+        <div class="product-2">
+         <img src="./img/scr2.jpg" style="height:350px;width:400px;">
+         <p class="offer"><strike>$50</strike>&nbsp;<span>$30</span> &nbsp;&nbsp; 60% off</p>
+         <div class="product-rating">
+         <span class="star" data-value="1" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="2" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="3" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="4" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="5"style="color:  #ccc;">&#9733;</span>
+        </div>
+        </div>
+        <div class="product-3">
+         <img src="./img/scr3.avif" style="height:350px;width:350px;">
+         <p class="offer"><strike>$50</strike>&nbsp;<span>$30</span> &nbsp;&nbsp; 60% off</p>
+         <div class="product-rating">
+         <span class="star" data-value="1" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="2" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="3" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="4" style="color:  #c00c18;">&#9733;</span>
+         <span class="star" data-value="5"style="color:  #ccc;">&#9733;</span>
+        </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+     <footer class="footer">
+        <div class="footer-container">
+          <!-- Footer Top Section -->
+          <div class="footer-top">
+            <h2 class="footer-logo">Wishfully</h2>
+            <p>Discover premium-quality scrunchies, bows, and stationery essentials crafted to brighten your day.</p>
+          </div>
+      
+          <!-- Footer Links Section -->
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Products</h3>
+              <ul>
+                <li><a href="#">Scrunchies</a></li>
+                <li><a href="#">Bows</a></li>
+                <li><a href="#">Pen</a></li>
+                <li><a href="#">Diary</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Pinterest</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom Section -->
+          <div class="footer-bottom">
+            <p>&copy; 2025 Scrunchies & Stationery. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        // Dummy product data
+        const products = {
+            1: { name: "Scrunchie-bow", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr1.webp" },
+            2: { name: "Scrunchie-bow", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr2.jpg" },
+            3: { name: "Scrunchie-bow", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr3.avif" },
+            4: { name: "Scrunchie-bow", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr4.webp" },
+            5: { name: "Scrunchie-bow", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr5.webp" },
+            6: { name: "Scrunchie-bow", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr6.webp" },
+            7: { name: "Scrunchie-bow", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr7.jpg" },
+            8: { name: "Product 2", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr8.webp" },
+            9: { name: "Product 3", oldPrice: "$50", newPrice: "$30", discount: "60% off", image: "./img/scr9.jpg" }
+        };
+
+        // Get Product ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get("id");
+
+        // Get Product Info
+        const product = products[productId];
+
+        // Display Product Details
+        if (product) {
+            document.getElementById("product-name").textContent = product.name;
+            document.getElementById("product-image").src = product.image;
+            document.getElementById("old-price").textContent = product.oldPrice;
+            document.getElementById("new-price").textContent = product.newPrice;
+            document.getElementById("discount").textContent = product.discount;
+        } else {
+            document.body.innerHTML = "<h1>Product Not Found</h1>";
+        }
+
+        // Purchase Function
+        function purchase() {
+            alert("Purchase Successful!");
+        }
+    </script>
+
+</body>
+</html>
