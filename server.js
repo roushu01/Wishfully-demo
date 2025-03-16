@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const cors = require('cors');
 const dotenv = require('dotenv');
 const bodyParser = require("body-parser");
-const User = require("./models/User"); // Import the User model
+const User = require("./models/user"); // Import the User model
 const authRoutes = require('./routes/authRoutes'); // Ensure this path is correct
 
 dotenv.config(); // Load environment variables
