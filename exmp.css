@@ -1,3 +1,4 @@
+
 .small-container {
     display: flex; /* Enables Flexbox */
     flex-direction:column; /* Ensures items are aligned in a row (default behavior) */
