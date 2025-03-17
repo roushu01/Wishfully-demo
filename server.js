@@ -13,21 +13,27 @@ const app = express();
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 5001;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/ecommerce';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/wishfully';
 
 // Middleware
 app.use(express.json());
 app.use(cors());
 
 // 📌 MongoDB Connection
-mongoose.connect(MONGO_URI)
+mongoose.connect(MONGO_URI,{ useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('✅ MongoDB Connected Successfully'))
     .catch(err => console.error('❌ MongoDB Connection Error:', err));
 
 // 📌 Registration Route
 app.post("/register", async (req, res) => {
     try {
+        console.log("🔹 Register route hit!");
+        console.log("Received Data:", req.body);
+
         const { username, email, password } = req.body;
+        if (!username || !email || !password) {
+            return res.status(400).json({ message: "All fields are required" });
+        }
 
         let userExists = await User.findOne({ email });
         if (userExists) {
@@ -40,33 +46,48 @@ app.post("/register", async (req, res) => {
         const newUser = new User({ username, email, password: hashedPassword });
         await newUser.save();
 
+        console.log("✅ User registered successfully!");
         res.status(201).json({ message: "User registered successfully" });
+
     } catch (error) {
+        console.error("❌ Registration Error:", error);
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
 
+
 // 📌 Login Route (✅ Add this here, below register route)
 app.post("/login", async (req, res) => {
-    try{
-        console.log("🔹 Login route hit!"); // Debugging log
+    try {
+        console.log("🔹 Login route hit!");
+        console.log("Received Data:", req.body);
+
         const { email, password } = req.body;
-        console.log("Received Data:", { email, password }); // Log the received request body
-        
+        if (!email || !password) {
+            return res.status(400).json({ message: "Email and password are required" });
+        }
+
         const user = await User.findOne({ email });
+        console.log("🟡 Found User:", user); // Debug log
 
         if (!user) {
+            console.log("❌ User not found");
             return res.status(400).json({ message: "User not found" });
         }
 
-        // Compare password
         const isMatch = await bcrypt.compare(password, user.password);
+        console.log("🔹 Password Match:", isMatch); // Debug log
+
         if (!isMatch) {
+            console.log("❌ Password does not match");
             return res.status(400).json({ message: "Invalid credentials" });
         }
 
+        console.log("✅ Login successful for:", user.email);
         res.status(200).json({ message: "Login successful" });
+
     } catch (error) {
+        console.error("❌ Login Error:", error);
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
@@ -81,3 +102,6 @@ app.get('/', (req, res) => {
 
 // 📌 Start Server
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+//db.getCollection("users").insertOne({ username: "testUser", email: "test@example.com", password: "test123" })
+//db.users.insertOne({ username: "testUser", email: "test@example.com", password: "test123" })
+
