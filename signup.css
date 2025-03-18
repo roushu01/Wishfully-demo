@@ -22,7 +22,7 @@ body{
 }
 header{
     position:fixed;
-    background: url('./backgroundSignup.png');
+    /*background: url('./backgroundSignup.png');*/
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -73,7 +73,6 @@ text-decoration: underline;
 .popup-button{
     width:150px;
     height: 50px;
-   
     border: 2px solid #4c6e2f;
     outline: auto;
     border-radius: 6px;
@@ -105,13 +104,13 @@ text-decoration: underline;
     overflow: hidden;
     transform: scale(0);
     transition: transform 0.5s ease-out, height 0.2s ease;
+    z-index:9999;
 }
 
 
 .wrapper.active-popup{
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
-
 .wrapper .close {
     position: absolute;
     top: 0;
@@ -128,10 +127,7 @@ text-decoration: underline;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     z-index: 1000;
-}
-
-
- 
+} 
 .wrapper .form-box{
 width: 100%;
 padding: 40px;
