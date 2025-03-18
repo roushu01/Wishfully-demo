@@ -18,20 +18,26 @@
             
         }
         .product-container {
-       
+           margin: 5px;
             padding: 20px;
             display: flex; /* Enables Flexbox */
            
             width: 100%;
-            margin-left: 40px; /* Adjust as needed */
+            margin-left: 40px;
+            font-family: "Hind", sans-serif;
+            font-weight: 500;
+            font-style: normal; /* Adjust as needed */
            
         }
         .pro-img{
             margin-right:20px;
         }
         .detail{
+          margin: 5px;
             color:grey;
             margin-right: 45px;
+            box-sizing:border-box;
+            font-family:'Sriracha';
         }
 
         img {
@@ -62,7 +68,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="logo"><img src='./img/Wishfully (1).png'></div>
         <div class="dropdown">
         <nav class="navigation">
@@ -86,10 +92,10 @@
         <div class="pro-img">
         <img id="product-image" src="" alt="Product Image"></div>
         <div class="pr-detail">
-        <p id="product-name" style="font-size:1.5rem;"></p>
+        <p id="product-name" style="font-size:1.5rem;margin: 10px;"></p>
         
-        <p><strike id="old-price" style="color:red;"></strike> <span id="new-price"></span> - <span id="discount"></span></p>
-        <h2>Product Details</h1>
+        <p><strike id="old-price" style="color:red;margin: 10px;margin-top: 30px;"></strike> <span id="new-price"></span> - <span id="discount"></span></p>
+        <h2 style="margin: 10px;">Product Details</h1>
         <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam earum eum aliquid commodi consequuntur eius quisquam quia nisi vel optio totam sit impedit, esse cum ut, molestias tenetur nihil? Aspernatur eveniet itaque et dolor adipisci corporis ipsa error, libero distinctio totam sapiente unde repudiandae iste, modi minus obcaecati fugiat similique quod expedita amet veritatis voluptas impedit, aut excepturi! Dolorum, facere. Ratione quos temporibus ducimus, dolor atque voluptatibus dolorum ex molestias modi quaerat impedit consequuntur provident vitae nobis architecto quibusdam adipisci!</p>
         <button class="buy-btn1" onclick="purchase()">Add to cart</button>
         <button class="buy-btn" onclick="purchase()">Buy Now</button>

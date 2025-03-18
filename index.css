@@ -7,11 +7,10 @@ overflow-x: hidden;
 * {
     margin:0;
     padding:0;
-   box-sizing:border-box;
-   font-family:'Sriracha';
+  
 }
 
-header{
+.main-header{
     background: url('./img/d60.jpg');
     background-size: cover;
     background-position: center;
@@ -23,6 +22,8 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    box-sizing:border-box;
+    font-family:'Sriracha';
 
 }
 
@@ -124,5 +125,7 @@ text-decoration: underline;
     background: url("./img/d60.jpg");
     height: 400px;
     width:100%;
-    margin-top: 20px;
+    margin-top: 60px;
+    box-sizing:border-box;
+    font-family:'Sriracha';
 }
