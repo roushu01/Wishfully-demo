@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: rgb(230, 241, 235);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: aliceblue;
+            color: #3a690e;
+            font-size: 1.1rem;
+            width:40%;
+            height:600px;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        
+        <!-- Product Summary -->
+        <div class="card">
+            <h2>Order Summary</h2>
+            <div class="summary">
+                <p>Product Name <span>$49.99</span></p>
+                <p>Shipping <span>$5.00</span></p>
+                <hr>
+                <p class="total">Total <span>$54.99</span></p>
+            </div>
+        </div>
+        
+        <!-- Shipping Details -->
+        <!-- <div class="card">
+            <h2>Shipping Details</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Postal Code">
+        </div> -->
+        
+        <!-- Payment Method -->
+        <div class="card">
+            <h2>Payment Method</h2>
+            <label><input type="radio" name="payment" value="card" checked> Credit Card</label>
+            <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+        </div>
+        
+        <!-- Place Order Button -->
+        <button class="checkout-btn" style="height:50px;width:130px;border-radius: 9px; margin-top: 10px;background-color:rgb(230, 241, 235);color: #3a690e; font-size:1.1rem ;" onclick="placed()">Place Order</button>
+    </div>
+    <script>
+        function placed() {
+            alert("Order placed successfully!");
+        }
+    </script>
+</body>
+</html>
