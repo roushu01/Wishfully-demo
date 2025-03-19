@@ -84,7 +84,7 @@ margin-top:-25px;
 margin-left:24%;
 }
 .offer strike{
-  color:red;
+  color:rgb(145, 135, 135);
   margin-left: 10px;
   justify-content: space-between; /* Distribute children evenly */
   align-items: center;

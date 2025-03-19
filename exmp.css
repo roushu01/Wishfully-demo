@@ -37,6 +37,7 @@ select:focus{
     outline:None;
 }
 .product{
+    margin-top: -20px;
     margin-left: 3%;
     font-family: "Hind", sans-serif;
   font-size: 1.1rem;
@@ -81,7 +82,7 @@ select:focus{
 .page-btn span{
    display:inline-block;
    
-   border:1px solid #ff523b;
+   border:1px solid #aaa3a2;
    margin-left:10px;
    width:40px;
    height:40px;
@@ -90,7 +91,7 @@ select:focus{
    cursor:pointer;
 }
 .page-btn span:hover{
-    background-color: #ff523b;
+    background-color: #db8181;
     color:white;
 
 }
